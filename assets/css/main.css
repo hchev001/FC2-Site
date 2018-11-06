@@ -1199,7 +1199,8 @@ input, select, textarea {
 				display: flex;
 				flex-wrap: wrap;
 				box-sizing: border-box;
-				align-items: stretch;
+				align-items: center;
+				flex-direction: column;
 			}
 
 				.row > * {
@@ -1436,6 +1437,11 @@ input, select, textarea {
 							padding-top: 60px;
 						}
 
+						/* On mobile screens, the width is 100% to look better on vertical flow*/
+						.row > .col-6-medium {
+							width: 100%;
+						}
+
 		}
 
 /* Custom */
@@ -1487,6 +1493,8 @@ input, select, textarea {
 	color: #E87770;
 	text-decoration: none;
 }
+
+.image
 
 
 /* Section/Article */
